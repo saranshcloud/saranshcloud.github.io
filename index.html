@@ -1,0 +1,431 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#080d18">
+<meta name="description" content="Saransh Sharma - Linux Administrator, AWS Cloud Engineer and DevOps professional with 4+ years of experience.">
+<meta name="author" content="Saransh Sharma">
+
+<title>Saransh Sharma | Linux & AWS Cloud Engineer</title>
+
+<style>
+:root {
+  --bg:#080d18;
+  --surface:#101a2b;
+  --surface2:#142139;
+  --blue:#3b82f6;
+  --cyan:#38bdf8;
+  --text:#e7edf7;
+  --muted:#9aa9bd;
+  --border:#24344b;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:var(--bg);color:var(--text);
+  font-family:Inter,Segoe UI,Arial,sans-serif;line-height:1.7
+}
+a{color:inherit;text-decoration:none}
+.container{width:min(1100px,90%);margin:auto}
+
+header{
+  position:sticky;top:0;z-index:10;
+  background:rgba(8,13,24,.95);
+  border-bottom:1px solid var(--border);
+  backdrop-filter:blur(12px)
+}
+nav{
+  min-height:72px;display:flex;align-items:center;
+  justify-content:space-between;gap:20px
+}
+.logo{font-size:22px;font-weight:800}
+.logo span{color:var(--cyan)}
+.nav-links{display:flex;gap:22px;flex-wrap:wrap}
+.nav-links a{color:var(--muted);font-size:14px}
+.nav-links a:hover{color:var(--cyan)}
+
+.hero{
+  min-height:580px;display:flex;align-items:center;
+  padding:90px 0;
+  background:radial-gradient(ellipse at 80% 30%,#14345c 0%,transparent 45%)
+}
+.tag{
+  display:inline-block;color:var(--cyan);
+  background:#102641;border:1px solid #234b72;
+  padding:7px 14px;border-radius:30px;
+  font-size:13px;margin-bottom:22px
+}
+h1{font-size:clamp(38px,6vw,65px);line-height:1.12}
+h1 span,.accent{color:var(--cyan)}
+.hero p{
+  max-width:700px;color:var(--muted);
+  margin:24px 0 30px;font-size:17px
+}
+.actions{display:flex;gap:14px;flex-wrap:wrap}
+.btn{
+  display:inline-block;padding:12px 22px;
+  border-radius:8px;font-weight:700;
+  border:1px solid var(--blue);transition:.2s
+}
+.btn.primary{background:var(--blue);color:white}
+.btn.secondary{color:var(--cyan)}
+.btn:hover{transform:translateY(-3px)}
+
+section{padding:82px 0}
+.section-title{margin-bottom:36px}
+.section-title h2{font-size:32px;margin-bottom:8px}
+.section-title p{color:var(--muted)}
+.about-text{color:var(--muted);max-width:850px}
+
+.grid{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:20px
+}
+.card{
+  background:var(--surface);border:1px solid var(--border);
+  padding:25px;border-radius:13px;transition:.2s
+}
+.card:hover{border-color:var(--blue);transform:translateY(-4px)}
+.card h3{font-size:18px;margin-bottom:12px}
+.card p,.card li{color:var(--muted);font-size:14px}
+.card ul{padding-left:18px;margin-top:12px}
+.icon{font-size:27px;margin-bottom:14px}
+
+.skills{display:flex;flex-wrap:wrap;gap:11px}
+.skill{
+  background:var(--surface2);border:1px solid var(--border);
+  border-radius:7px;padding:9px 14px;
+  color:#c5d9f2;font-size:14px
+}
+.timeline{
+  border-left:2px solid var(--blue);
+  padding-left:26px;margin-left:8px
+}
+.timeline-item{margin-bottom:30px;position:relative}
+.timeline-item:before{
+  content:"";position:absolute;width:12px;height:12px;
+  border-radius:50%;background:var(--cyan);
+  left:-33px;top:8px
+}
+.timeline-item p{color:var(--muted);margin-top:8px}
+.project-label{
+  color:var(--cyan);font-size:12px;
+  text-transform:uppercase;letter-spacing:1px;
+  margin-bottom:10px;display:block
+}
+.contact{text-align:center}
+.contact p{color:var(--muted);margin:12px auto 25px;max-width:600px}
+footer{
+  border-top:1px solid var(--border);
+  padding:25px 0;color:var(--muted);
+  text-align:center;font-size:13px
+}
+@media(max-width:800px){
+  .grid{grid-template-columns:repeat(2,1fr)}
+  .nav-links{gap:12px}
+}
+@media(max-width:550px){
+  nav{align-items:flex-start;flex-direction:column;padding:14px 0}
+  .nav-links{gap:13px}
+  .grid{grid-template-columns:1fr}
+  section{padding:60px 0}
+  .hero{min-height:auto;padding:75px 0}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<nav class="container">
+  <a class="logo" href="#home">Saransh<span>.</span></a>
+  <div class="nav-links">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+</header>
+
+<main>
+
+<section class="hero" id="home">
+<div class="container">
+  <span class="tag">Linux | AWS | Cloud | DevOps</span>
+  <h1>Linux Administrator<br>
+    <span>& AWS Cloud Engineer</span>
+  </h1>
+  <p>
+    Hi, I'm Saransh Sharma. I have 4+ years of experience
+    working with Linux systems, AWS cloud infrastructure,
+    application deployments and automation. I enjoy building
+    reliable, secure and scalable infrastructure.
+  </p>
+  <div class="actions">
+    <a class="btn primary" href="#projects">Explore My Work →</a>
+    <a class="btn secondary" href="#contact">Get In Touch</a>
+  </div>
+</div>
+</section>
+
+<section id="about">
+<div class="container">
+  <div class="section-title">
+    <h2>About <span class="accent">Me</span></h2>
+    <p>My technical journey and professional background.</p>
+  </div>
+  <div class="about-text">
+    <p>
+      I am a Linux Administrator and Cloud Consultant with
+      over 4 years of experience in Linux server administration,
+      AWS cloud infrastructure and application management.
+    </p>
+    <br>
+    <p>
+      My experience includes configuring and maintaining
+      production servers, troubleshooting infrastructure,
+      deploying applications, managing databases and
+      implementing backup and monitoring solutions.
+    </p>
+    <br>
+    <p>
+      I have hands-on experience with Ubuntu, CentOS,
+      AlmaLinux, AWS services, Docker, Terraform and
+      infrastructure automation. I continuously explore
+      new technologies and best practices to improve
+      system reliability, security and operational efficiency.
+    </p>
+  </div>
+</div>
+</section>
+
+<section id="skills" style="background:#0b1220">
+<div class="container">
+  <div class="section-title">
+    <h2>Technical <span class="accent">Skills</span></h2>
+    <p>Technologies and platforms I work with.</p>
+  </div>
+
+  <h3 style="margin-bottom:15px">Cloud & Infrastructure</h3>
+  <div class="skills" style="margin-bottom:30px">
+    <span class="skill">AWS EC2</span>
+    <span class="skill">S3</span>
+    <span class="skill">RDS</span>
+    <span class="skill">IAM</span>
+    <span class="skill">EBS</span>
+    <span class="skill">EFS</span>
+    <span class="skill">ElastiCache</span>
+    <span class="skill">AWS DRS</span>
+    <span class="skill">Terraform</span>
+  </div>
+
+  <h3 style="margin-bottom:15px">Operating Systems & DevOps</h3>
+  <div class="skills" style="margin-bottom:30px">
+    <span class="skill">Ubuntu</span>
+    <span class="skill">CentOS</span>
+    <span class="skill">AlmaLinux</span>
+    <span class="skill">Docker</span>
+    <span class="skill">Docker Compose</span>
+    <span class="skill">Jenkins</span>
+    <span class="skill">Git</span>
+    <span class="skill">Bash</span>
+    <span class="skill">Python</span>
+  </div>
+
+  <h3 style="margin-bottom:15px">Web Servers & Applications</h3>
+  <div class="skills" style="margin-bottom:30px">
+    <span class="skill">Nginx</span>
+    <span class="skill">Apache</span>
+    <span class="skill">WildFly</span>
+    <span class="skill">Java</span>
+    <span class="skill">PostgreSQL</span>
+    <span class="skill">Redis</span>
+    <span class="skill">Solr</span>
+  </div>
+
+  <h3 style="margin-bottom:15px">Monitoring, Backup & Hosting</h3>
+  <div class="skills">
+    <span class="skill">Zabbix</span>
+    <span class="skill">Bacula</span>
+    <span class="skill">UrBackup</span>
+    <span class="skill">WHM/cPanel</span>
+    <span class="skill">CWP</span>
+    <span class="skill">Virtualmin</span>
+    <span class="skill">CloudWatch</span>
+  </div>
+</div>
+</section>
+
+<section id="experience">
+<div class="container">
+  <div class="section-title">
+    <h2>Professional <span class="accent">Experience</span></h2>
+    <p>My work and areas of responsibility.</p>
+  </div>
+
+  <div class="timeline">
+    <div class="timeline-item">
+      <h3>Linux Administrator / Cloud Consultant</h3>
+      <p>4+ Years of Professional Experience</p>
+      <ul style="color:var(--muted);padding-left:20px;margin-top:12px">
+        <li>Managed Linux servers and AWS cloud resources.</li>
+        <li>Worked with EC2, S3, RDS, IAM, EBS and EFS.</li>
+        <li>Deployed and maintained applications using Docker and WildFly.</li>
+        <li>Configured Nginx, Apache, SSL and reverse proxies.</li>
+        <li>Automated administrative tasks using Bash and PowerShell.</li>
+        <li>Managed PostgreSQL, Redis and application services.</li>
+        <li>Implemented backup, monitoring and disaster recovery processes.</li>
+        <li>Troubleshot server, network and application issues.</li>
+      </ul>
+    </div>
+  </div>
+  <p style="color:var(--muted);font-size:13px">
+    Employer name and employment dates can be added later.
+  </p>
+</div>
+</section>
+
+<section id="projects" style="background:#0b1220">
+<div class="container">
+  <div class="section-title">
+    <h2>Featured <span class="accent">Projects</span></h2>
+    <p>Selected infrastructure and administration work.</p>
+  </div>
+
+  <div class="grid">
+    <article class="card">
+      <div class="icon">☁️</div>
+      <span class="project-label">AWS / Cloud</span>
+      <h3>AWS Infrastructure & DR</h3>
+      <p>
+        Worked with AWS EC2, EBS, S3, RDS and EFS.
+        Participated in disaster recovery drills and
+        cross-region recovery planning.
+      </p>
+    </article>
+
+    <article class="card">
+      <div class="icon">🐳</div>
+      <span class="project-label">Docker / DevOps</span>
+      <h3>Containerized Application Stack</h3>
+      <p>
+        Worked with Docker Compose deployments involving
+        WildFly, PostgreSQL, Redis, Solr, Nginx and
+        supporting application services.
+      </p>
+    </article>
+
+    <article class="card">
+      <div class="icon">🔄</div>
+      <span class="project-label">Automation</span>
+      <h3>Backup Automation</h3>
+      <p>
+        Developed automated backup workflows using
+        PowerShell, database dumps, 7-Zip compression
+        and scheduled retention policies.
+      </p>
+    </article>
+
+    <article class="card">
+      <div class="icon">📊</div>
+      <span class="project-label">Monitoring</span>
+      <h3>Server Monitoring & Logging</h3>
+      <p>
+        Worked with Zabbix monitoring, resource
+        troubleshooting, journal management and
+        application log rotation.
+      </p>
+    </article>
+
+    <article class="card">
+      <div class="icon">🌐</div>
+      <span class="project-label">Web Infrastructure</span>
+      <h3>Reverse Proxy & SSL</h3>
+      <p>
+        Configured Nginx and Apache reverse proxies,
+        SSL certificates, application routing and
+        upload limits for hosted applications.
+      </p>
+    </article>
+
+    <article class="card">
+      <div class="icon">📧</div>
+      <span class="project-label">Mail Infrastructure</span>
+      <h3>Email Server Management</h3>
+      <p>
+        Worked with Postfix, Dovecot, MailWizz, Postal,
+        Modoboa and email delivery services.
+      </p>
+    </article>
+  </div>
+</div>
+</section>
+
+<section id="resume">
+<div class="container">
+  <div class="card" style="text-align:center">
+    <h2>My <span class="accent">Resume</span></h2>
+    <p style="color:var(--muted);margin:12px 0 22px">
+      Interested in my professional background?
+      Download my latest resume.
+    </p>
+    <a class="btn primary" href="resume.pdf" download>
+      Download Resume ↓
+    </a>
+    <p style="font-size:12px;color:var(--muted);margin-top:12px">
+      Upload your PDF as resume.pdf in the repository root.
+    </p>
+  </div>
+</div>
+</section>
+
+<section id="contact" class="contact">
+<div class="container">
+  <div class="section-title">
+    <h2>Let's <span class="accent">Connect</span></h2>
+    <p>Open to Cloud, Linux and DevOps opportunities.</p>
+  </div>
+  <p>
+    Feel free to reach out for professional opportunities,
+    technical discussions or collaborations.
+  </p>
+  <div class="actions" style="justify-content:center">
+    <a class="btn primary"
+       href="mailto:sharma.saransh1998@gmail.com">
+       Email Me
+    </a>
+
+    <a class="btn secondary"
+       href="https://www.linkedin.com/in/saransh-sharma-687573134/"
+       target="_blank" rel="noopener">
+       LinkedIn
+    </a>
+
+    <a class="btn secondary"
+       href="https://github.com/saranshcloud"
+       target="_blank" rel="noopener">
+       GitHub
+    </a>
+  </div>
+</div>
+</section>
+
+</main>
+
+<footer>
+<div class="container">
+  © <span id="year"></span> Saransh Sharma.
+  Built with HTML, CSS & JavaScript.
+</div>
+</footer>
+
+<script>
+document.getElementById("year").textContent =
+  new Date().getFullYear();
+</script>
+
+</body>
+</html>
